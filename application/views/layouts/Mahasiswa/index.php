@@ -34,26 +34,27 @@
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Mahasiswa</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <form action="<?php echo base_url(); ?>/Mahasiswa/add_mhs" method="post">
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input type="text" name="nama" id="nama" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="npm">NPM</label>
-                        <input type="text" name="npm" id="npm" class="form-control" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="alamat">Alamat</label>
-                        <textarea name="alamat" id="alamat" cols="15" rows="5" class="form-control" required=""></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save</button>
-            </div>
+            <form action="<?php echo base_url(); ?>/Mahasiswa/add_mhs" method="post">
+                <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" name="nama" id="nama" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="npm">NPM</label>
+                            <input type="text" name="npm" id="npm" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <textarea name="alamat" id="alamat" cols="15" rows="5" class="form-control" required=""></textarea>
+                        </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
             </div>
         </div>
     </div>
